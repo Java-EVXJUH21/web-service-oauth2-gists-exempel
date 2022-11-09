@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Github OAuth</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo&family=Kumbh+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="content unauthorized">
+      <div class="top">
+        <img class="img-github" src="github.png" />
+        <h1>Hello there!</h1>
+      </div>
+      <div class="content-bottom">
+        <a class="btn" href="/auth">SIGN IN WITH GITHUB</a>
+      </div>
+    </div>
+    <div class="content authorized gist-content" style="display: none">
+      <div class="top">
+        <img class="img-github" src="github.png" />
+        <h1>Create gist</h1>
+        <form type="submit" action="/create">
+          <label>Description</label>
+          <br>
+          <input name="description">
+          <br>
+          <label>File name</label>
+          <br>
+          <input name="file">
+          <br>
+          <label>Content</label>
+          <br>
+          <input name="content">
+          <br>
+          <button type="sumbit" class="gist-btn">Create</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="content gist" style="display: none">
+      <div class="top">
+        <img class="img-github" src="github.png" />
+        <br>
+        <h1>Nicely done!</h1>
+        <br>
+        <a id="gist-url">Open your gist here</a>
+      </div>
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>

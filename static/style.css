@@ -1,0 +1,90 @@
+body {
+  height: 100vh;
+  margin: 0;
+  color: #222;
+  font-family: 'Kumbh Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(186, 43, 181);
+  background: linear-gradient(0deg, rgb(43, 88, 186) 0%, rgb(25, 36, 151) 100%);
+}
+
+.content {
+  background: white;
+  width: 380px;
+  height: 400px;
+  border-radius: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 3px 16px #222;
+}
+
+.gist-content {
+  height: 520px;
+}
+
+.content-bottom {
+  margin: 10px 0;
+}
+
+h1 {
+  font-family: 'Arvo', serif;
+  font-size: 26px;
+  margin: 32px auto 24px;
+  line-height: 40px;
+}
+
+.img-github {
+  margin-top: 32px;
+  width: 160px;
+  height: 160px;
+}
+
+.btn {
+  text-decoration: none;
+  display: block;
+  width: 220px;
+  line-height: 38px;
+  padding-top: 2px;
+  border-radius: 20px;
+  color: white;
+  background: rgb(41, 115, 213);
+  margin: 0 auto;
+  border: none;
+  font-size: 14px;
+}
+
+input[type='text'] {
+  width: 180px;
+  line-height: 32px;
+  margin-bottom: 12px;
+  padding-left: 12px;
+}
+
+.sign-in-text {
+  font-size: 14px;
+  line-height: 22px;
+}
+.party-popper {
+  display: inline-block;
+  font-size: 52px;
+  margin-bottom: 24px;
+}
+
+input {
+  width: 100px;
+  height: 30px;
+  border-radius: 3px;
+  border: 1px solid black;
+}
+
+.gist-btn {
+  margin-top: 5px;
+  width: 70px;
+  height: 30px;
+  border-radius: 2px;
+}
